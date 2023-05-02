@@ -7,36 +7,37 @@ h1 {
   font-size: 32px;
   color: #141414; }
 
+.secondary-button {
+  background-color: #f0f0f0;
+  color: #ff5757; }
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  height: 40rem; }
+
+.input-container {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .input-container__input {
+    border-radius: 5px;
+    width: 100px;
+    height: 50px; }
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  border-bottom: 1px solid grey;
+  z-index: 5; }
+
 .primary-button {
   background-color: #854dff;
   color: white;
   border-radius: 50%;
   border: none;
   width: 100px;
-  height: 100px; }
-
-.secondary-button {
-  background-color: #f0f0f0;
-  color: #ff5757; }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-bottom-right-radius: 15px;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px 10px 5px;
-  margin-top: 8rem;
-  height: 40rem; }
-
-.age-input-container {
-  display: flex;
-  border-color: #dbdbdb; }
-  .age-input-container__input {
-    width: 80px;
-    height: 50px;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    font-size: 30px;
-    padding: 10px; }
+  height: 100px;
+  margin-top: -1rem;
+  z-index: 10; }
