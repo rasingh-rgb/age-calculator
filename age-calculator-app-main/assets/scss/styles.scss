@@ -22,7 +22,7 @@ $body-font-weights: 400i, 700, 800i;
 body {
     font-family: $body-font-family;
     font-weight: $body-font-weights;
-    background-color: beige;
+    background-color: $neutral-light-grey;
 }
 
 h1 {
@@ -33,6 +33,10 @@ h1 {
 .primary-button {
     background-color: $primary-purple;
     color: $neutral-white;
+    border-radius: 50%;
+    border: none;
+    width: 100px;
+    height: 100px;
 }
 
 .secondary-button {
@@ -40,6 +44,29 @@ h1 {
     color: $primary-light-red;
 }
 
-.age-calculator-container {
+.container {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom-right-radius: 15px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px 5px;
+    margin-top: 8rem;
+    height: 40rem;
+}
+
+.age-input-container {
+    display: flex;
+    border-color: $neutral-light-grey;
+
+    &__input {
+        width: 80px;
+        height: 50px;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        font-size: 30px;
+        padding: 10px;
+    }
 }
