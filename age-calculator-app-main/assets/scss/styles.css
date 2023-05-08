@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400i, 700, 800i;
+  background-color: hsl(0, 0%, 86%);
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 32px;
+  color: hsl(0, 0%, 8%);
+}
+
+.secondary-button {
+  background-color: hsl(0, 0%, 94%);
+  color: hsl(0, 100%, 67%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 6rem;
+  background-color: hsl(0, 0%, 100%);
+  width: 400px;
+  border-radius: 25px;
+  border-bottom-right-radius: 25%;
+}
+
+.input-element {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.age-input-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+  height: 12rem;
+}
+.age-input-container__headline {
+  letter-spacing: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: hsl(0, 1%, 44%);
+  font-weight: bold;
+}
+.age-input-container__input {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid hsl(0, 1%, 44%);
+  font-size: 20px;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.btn-container__primary-button {
+  color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  border: none;
+  width: 100px;
+  height: 100px;
+  background-color: hsl(259, 100%, 65%);
+  background-image: url("../images/icon-arrow.svg");
+  background-size: cover;
+}
+
+.age-output-container {
+  margin-top: 1rem;
+  font-size: 4rem;
+  padding: 1rem;
+}/*# sourceMappingURL=styles.css.map */

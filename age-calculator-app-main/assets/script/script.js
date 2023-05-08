@@ -5,7 +5,15 @@ btn.addEventListener('click', () => {
     let day = document.getElementById("day").value;
     let month = document.getElementById("month").value;
     let year = document.getElementById("year").value;
-    document.getElementById("years").innerText = year;
-    document.getElementById("months").innerText = month;
-    document.getElementById("days").innerText = day;
+
+    let currentYear = 2023;
+    let currentMonth = 5;
+    let currentDay = 5;
+
+    document.getElementById("years").innerText = currentYear - year + "YEAR";
+    document.getElementById("months").innerText = currentMonth - month + "MONTHS";
+    document.getElementById("days").innerText = currentDay - day + "DAYS";
+
+
+
 });

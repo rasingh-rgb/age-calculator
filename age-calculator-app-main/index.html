@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/scss/styles.css" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
 
-  <title>Frontend Mentor | Age calculator app</title>
-</head>
+  <body>
+    <header></header>
 
-<body>
-
-  <header>
-
-  </header>
-
-  <main>
-    <div class="container">
-
-      <div class="input-container">
-
-        <span>
-          <label for="day" class="age-input-container__textcontent">DAY</label>
-          <input type="text" id="day" name="name" class="input-container__input" />
+    <main class="container">
+      
+      <div class="age-input-container">
+        <span class="input-element">
+          <label for="day" class="age-input-container__headline">DAY</label>
+          <input
+            type="text"
+            id="day"
+            name="day"
+            class="age-input-container__input"
+          />
         </span>
 
-        <span>
-          <label for="month" class="age-input-container__textcontent">MONTH</label>
-          <input type="text" id="month" name="month" class="input-container__input"/>
+        <span class="input-element">
+          <label for="month" class="age-input-container__headline">MONTH</label>
+          <input
+            type="text"
+            id="month"
+            name="month"
+            class="age-input-container__input"
+          />
         </span>
 
-        <span>
-          <label for="year" class="age-input-container__textcontent">YEAR</label>
-          <input type="text" id="year" name="month" class="input-container__input"/>
+        <span class="input-element">
+          <label for="year" class="age-input-container__headline">YEAR</label>
+          <input
+            type="text"
+            id="year"
+            name="year"
+            class="age-input-container__input"
+          />
         </span>
-
       </div>
 
-      <div class="button">
-        <button class="primary-button" id="submitbtn">
-          <img src="../age-calculator-app-main/assets/images/icon-arrow.svg" alt="Ein Button um das Geburtsdatum abzuschicken">
-        </button>
+      <div class="btn-container">
+        <button id="submitbtn" class="btn-container__primary-button"></button>
       </div>
 
       <div class="age-output-container">
-        <p id="years"> --- </p>
-        <p id="months"> --- </p>
-        <p id="days"> --- </p>
+        <p id="years" class="age-output-container__textoutput"><span> --- </span><span> years </span></p>
+        <p id="months" class="age-output-container__textoutput" ><span> --- </span> <span> months </span></p>
+        <p id="days" class="age-output-container__textoutput"><span> --- </span> <span> days </span></p>
       </div>
+    </main>
 
-    </div>
-  </main>
+    <footer></footer>
 
-  <footer>
-
-  </footer>
-  <script src="../age-calculator-app-main/assets/script/script.js"></script>
-</body>
-
+    <script src="../age-calculator-app-main/assets/script/script.js"></script>
+  </body>
 </html>

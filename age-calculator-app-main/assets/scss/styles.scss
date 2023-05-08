@@ -19,10 +19,17 @@ $body-copy-font-size: 32px;
 $body-font-family: "Poppins", sans-serif;
 $body-font-weights: 400i, 700, 800i;
 
+* {
+    margin: 0;
+}
+
 body {
     font-family: $body-font-family;
     font-weight: $body-font-weights;
     background-color: $neutral-light-grey;
+
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -36,41 +43,77 @@ h1 {
 }
 
 .container {
-    background-color: white;
-    border-radius: 5px;
-    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 6rem;
+    background-color: $neutral-white;
+
+
+    width: 400px;
+
+    border-radius: 25px;
+    border-bottom-right-radius: 25%;
 }
 
-.input-container {
-    display: grid;
-    padding: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
+.input-element {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
 
-    &__input{
-        border-radius: 5px;
-        width: 100px;
-        height: 50px;
-    
+.age-input-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    height: 12rem;
+
+    &__headline {
+        letter-spacing: 4px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: $neutral-smokey-grey;
+        font-weight: bold;
     }
-        
+
+    &__input {
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid $neutral-smokey-grey;
+        font-size: 20px;
+        padding-left: 1rem;
+        font-weight: bold;
+    }
 }
 
-.button {
+.btn-container {
+
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 
-    margin-top: 3rem;
-    border-bottom: 1px solid grey;
-    z-index: 5;
+    &__primary-button {
+        color: $neutral-white;
+        border-radius: 50%;
+        border: none;
+
+        width: 100px;
+        height: 100px;
+
+        background-color: $primary-purple;
+        background-image: url("../images/icon-arrow.svg");
+        background-size: cover;
+    }
 }
 
-.primary-button {
-    background-color: $primary-purple;
-    color: $neutral-white;
-    border-radius: 50%;
-    border: none;
-    width: 100px;
-    height: 100px;
-    margin-top: -1rem;
-    z-index: 10;
+.age-output-container {
+    margin-top: 1rem;
+    font-size: 4rem;
+    padding: 1rem;
+
+    &__textoutput {
+
+    }
 }
