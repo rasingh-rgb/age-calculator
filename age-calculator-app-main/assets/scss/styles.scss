@@ -1,23 +1,4 @@
-// Layout
-$mobile-width: 375px;
-$desktop-width: 1440px;
-
-// Colors
-$primary-purple: hsl(259, 100%, 65%);
-$primary-light-red: hsl(0, 100%, 67%);
-
-$neutral-white: hsl(0, 0%, 100%);
-$neutral-off-white: hsl(0, 0%, 94%);
-$neutral-light-grey: hsl(0, 0%, 86%);
-$neutral-smokey-grey: hsl(0, 1%, 44%);
-$neutral-off-black: hsl(0, 0%, 8%);
-
-// Typography
-$body-copy-font-size: 32px;
-
-// Font
-$body-font-family: "Poppins", sans-serif;
-$body-font-weights: 400i, 700, 800i;
+@import "variables";
 
 * {
     margin: 0;
@@ -47,12 +28,11 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
 
-    margin-top: 6rem;
-    background-color: $neutral-white;
-
-
+    padding: 0 3rem;
+    margin-top: 10rem;
     width: 400px;
 
+    background-color: $neutral-white;
     border-radius: 25px;
     border-bottom-right-radius: 25%;
 }
@@ -64,11 +44,10 @@ h1 {
 }
 
 .age-input-container {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid black;
-    height: 12rem;
 
     &__headline {
         letter-spacing: 4px;
@@ -89,31 +68,61 @@ h1 {
 }
 
 .btn-container {
-
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 2rem 0 2rem;
 
     &__primary-button {
         color: $neutral-white;
         border-radius: 50%;
         border: none;
 
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
 
         background-color: $primary-purple;
         background-image: url("../images/icon-arrow.svg");
-        background-size: cover;
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 100;
+        margin-top: -4.5rem;
     }
 }
 
 .age-output-container {
-    margin-top: 1rem;
     font-size: 4rem;
-    padding: 1rem;
-
     &__textoutput {
+        font-family: $body-font-family;
+        margin-bottom: 3rem;
+    }
+}
 
+.line {
+    border-bottom: 1px solid rgb(218, 209, 209);
+    z-index: 50;
+}
+
+.output__color {
+    color: $primary-purple;
+    letter-spacing: 10px;
+}
+
+@media only screen and (min-width: $desktop-width) {
+    .container {
+        width: 800px;
+    }
+
+    .age-input-container {
+        width: 450px;
+        justify-content: space-between;
+    }
+
+    .btn-container {
+        justify-content: flex-end;
+    }
+
+    .output__margin {
+        margin-right: 4rem;
     }
 }

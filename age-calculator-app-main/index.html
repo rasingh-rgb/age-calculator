@@ -20,7 +20,6 @@
     <header></header>
 
     <main class="container">
-      
       <div class="age-input-container">
         <span class="input-element">
           <label for="day" class="age-input-container__headline">DAY</label>
@@ -29,6 +28,8 @@
             id="day"
             name="day"
             class="age-input-container__input"
+            maxlength="2"
+            placeholder="DD"
           />
         </span>
 
@@ -39,6 +40,8 @@
             id="month"
             name="month"
             class="age-input-container__input"
+            maxlength="2"
+            placeholder="MM"
           />
         </span>
 
@@ -49,18 +52,31 @@
             id="year"
             name="year"
             class="age-input-container__input"
+            maxlength="4"
+            placeholder="YYYY"
           />
         </span>
       </div>
+
+      <span class="line"></span>
 
       <div class="btn-container">
         <button id="submitbtn" class="btn-container__primary-button"></button>
       </div>
 
       <div class="age-output-container">
-        <p id="years" class="age-output-container__textoutput"><span> --- </span><span> years </span></p>
-        <p id="months" class="age-output-container__textoutput" ><span> --- </span> <span> months </span></p>
-        <p id="days" class="age-output-container__textoutput"><span> --- </span> <span> days </span></p>
+        <p class="age-output-container__textoutput">
+          <span class="output__color" id="years"> -- </span>
+          <span class="output__margin" > years </span>
+        </p>
+        <p class="age-output-container__textoutput">
+          <span class="output__color" id="months"> -- </span>
+          <span class="output__margin"> months </span>
+        </p>
+        <p class="age-output-container__textoutput">
+          <span class="output__color" id="days"> -- </span>
+          <span class="output__margin"> days </span>
+        </p>
       </div>
     </main>
 
